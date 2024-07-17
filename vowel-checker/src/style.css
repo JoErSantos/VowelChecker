@@ -1,0 +1,70 @@
+body{
+  background: linear-gradient(90deg, rgba(3,15,50,1) 0%, rgba(15,35,77,1) 15%, rgba(20,51,115,1) 30%, rgba(20,62,145,1) 48%, rgba(34,73,149,1) 64%,
+   rgba(40,91,191,1) 81%, rgba(0,88,255,1) 100%);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form{
+  background: rgba(49, 49, 212, 0.092);
+  padding-inline: 0.75rem;
+  padding-block: 1.5rem;
+  border-radius:10px;
+  display: flex;
+  flex-direction: column;
+
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from{
+      box-shadow: 0 0 20px 0 rgb(152, 187, 255);    
+    }
+    to{
+      box-shadow: 0 0 20px 10px rgb(152, 187, 255);
+    } 
+}
+
+h1{
+  margin: 0;
+  color: white;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 100%;
+  text-align: center;
+}
+
+p{
+  margin: 0;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+textarea{
+  width: 20rem;
+  height: 15rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+input{
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #378556;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform:uppercase;
+  color: white;
+  border: none;
+}
